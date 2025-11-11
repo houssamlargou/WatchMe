@@ -11,8 +11,10 @@
       defer
     ></script>
   </head>
-  <body>
-    <section class="flex p-[20px] justify-between items-center bg-[#171D25]">
+  <body style="font-family: 'Napoli', sans-serif" class="text-white">
+    <section
+      class="flex p-[20px] justify-between items-center bg-[#171D25] sticky top-0 z-[2]"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -53,10 +55,335 @@
       </div>
       <button
         class="bg-[blue] text-white pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[20px]"
-        style="font-family: 'Napoli', sans-serif"
       >
         sign in
       </button>
+    </section>
+    <section class="p-12.5 bg-[#1B2838]">
+      <div class="text-4xl w-[200px]">Discover new games</div>
+    </section>
+    <section class="flex px-[14px] py-[10px] bg-[#171D25] justify-between">
+      <button
+        class="px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+      >
+        <span class="top-[0] text-sm">genre</span>
+        <svg
+          fill="white"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="top-[0] w-[20px]"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+      <button
+        class="px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+      >
+        <span class="top-[0] text-sm">platform</span>
+        <svg
+          fill="white"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="top-[0] w-[20px]"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+      <button
+        class="px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+      >
+        <span class="top-[0] text-sm">note</span>
+        <svg
+          fill="white"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="top-[0] w-[20px]"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </section>
+    <section
+      class="bg-gradient-to-b from-[#183B4C] to-[#1B2838] flex justify-center items-center flex-col gap-[50px] py-24"
+    >
+      <div
+        class="card w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-[356px] h-[611px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col"
+      >
+        <div class="relative w-[316px] h-[392] pt-[14px] overflow-hidden">
+          <img src="test.jpg" alt="" class="" />
+        </div>
+        <div class="text-2xl pt-[14px]">Valorant</div>
+        <div class="flex gap-3.5 pt-[10px]">
+          <div class="text-[#BBE1FA]">FPS</div>
+          <div class="text-[#BBE1FA]">Tactical Shooter</div>
+        </div>
+
+        <div class="pt-[43px] flex flex-col justify-between pr-[20px]">
+          <div class="flex justify-between">
+            <div class="font-inder">Jun2,2020</div>
+            <div>⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="pt-[27px] pb-[20px] flex justify-between items-center">
+            <button
+              class="text-sm px-4 py-2.5 bg-gradient-to-b from-[#06BFFF] to-[#2B79FF] rounded-[30px]"
+            >
+              view details
+            </button>
+            <button
+              class="px-[10px] py-[5px] bg-[#C09100] flex gap-[3px] rounded-[30px]"
+            >
+              fav
+              <img src="heart.png" class="w-[21px] h-[21px]" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center w-[171px] flex justify-between text-2xl">
+        <div class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] relative">
+          <spanc
+            class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >1</spanc
+          >
+        </div>
+        <div class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] relative">
+          <span class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >2</span
+          >
+        </div>
+        <div class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] right-[0] relative">
+          <span class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >3</span
+          >
+        </div>
+      </div>
     </section>
   </body>
 </html>

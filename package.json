@@ -1,0 +1,27 @@
+{
+  "name": "watch-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houssamlargou/WatchMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houssamlargou/WatchMe/issues"
+  },
+  "homepage": "https://github.com/houssamlargou/WatchMe#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.2.2"
+  },
+  "keywords": []
+}
