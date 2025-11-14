@@ -11,14 +11,39 @@
       defer
     ></script>
   </head>
-  <body>
-    <section class="flex p-[20px] justify-between items-center bg-[#171D25]">
+  <body style="font-family: 'Napoli', sans-serif" class="text-white">
+    <section
+      class="flex p-[20px] justify-between items-center bg-[#171D25] sticky top-0 z-[9]"
+    >
+      <div
+        id="navbar"
+        class="w-[70%] h-screen absolute z-[5] top-[0] left-[-100%] invisible opacity-0"
+      >
+        <div class="h-[151px] bg-black"></div>
+        <div class="h-[100%] bg-[#171A21]">
+          <ul
+            id=""
+            class="text-2xl flex flex-col gap-3.5 pl-6 pt-15 font-inder"
+          >
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Favorites</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        id="out-navbar"
+        class="w-[100%] h-screen bg-black absolute z-[4] top-[0] right-[0] opacity-40 hidden"
+      ></div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
         width="40"
         height="40"
+        class="hover:cursor-pointer"
+        id="menu"
         viewBox="0 0 50 50"
         fill="white"
       >
@@ -29,10 +54,9 @@
       <div class="relative z-[1] relative">
         <input
           type="text"
-          class="z-[2] bg-[#171D25] border-[4px] border-[#FFFFFF] opacity-[18%] p-[5px] w-[130px] rounded-[20px]"
+          class="z-[2] bg-[#171D25] border-[4px] border-[#FFFFFF] opacity-[18%] p-[5px] w-[130px] rounded-[20px] hover:cursor-pointer"
         />
         <?xml version="1.0" encoding="UTF-8"?>
-        <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -41,7 +65,7 @@
           x="0px"
           y="0px"
           viewBox="0 0 513.749 513.749"
-          class="fill-[#FFFFFF] opacity-[50%] absolute top-[50%] right-[0] w-[18px] h-[18px] translate-y-[-50%] translate-x-[-80%]"
+          class="fill-[#FFFFFF] opacity-[50%] absolute top-[50%] right-[0] w-[18px] h-[18px] translate-y-[-50%] translate-x-[-80%] hover:cursor-pointer"
           xml:space="preserve"
         >
           <g>
@@ -53,10 +77,166 @@
       </div>
       <button
         class="bg-[blue] text-white pt-[10px] pr-[20px] pb-[10px] pl-[20px] rounded-[20px]"
-        style="font-family: 'Napoli', sans-serif"
       >
         sign in
       </button>
     </section>
+    <section class="p-12.5 bg-[#1B2838] relative z-5">
+      <div class="text-4xl w-[200px]">Discover new games</div>
+    </section>
+    <section id="filter-container" class="relative z-2 w-[100%]">
+      <div
+        class="flex justify-between px-[14px] py-[10px] bg-[#171D25] w-[100%] z-2 absolute"
+        id="filter-content"
+      >
+        <button
+          class="filter-type px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+          id="genre-container"
+        >
+          <span class="icon top-[0] text-sm" id="genre">genre</span>
+          <svg
+            fill="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="top-[0] w-[20px]"
+            id="genre-icon"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button
+          class="filter-type px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+          id="platform-container"
+        >
+          <span class="top-[0] text-sm" id="platform">platform</span>
+          <svg
+            fill="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon top-[0] w-[20px]"
+            id="platform-icon"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button
+          class="filter-type px-[8px] py-[6px] bg-black relative w-[106px] h-[30px] flex justify-between items-center"
+          id="note-container"
+        >
+          <span class="top-[0] text-sm" id="note">note</span>
+          <svg
+            fill="white"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="top-[0] w-[20px]"
+            id="note-icon"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+      <div
+        id="filter"
+        class="absolute top-[-80px] left-0 w-[100%] bg-[#171D25] z-1"
+      >
+        <div
+          id="filter__genre-container"
+          class="flex flex-col text-[13px] px-[14px] py-[6px] text-[#8E939A] gap-[6px]"
+        >
+        </div>
+      </div>
+    </section>
+    <section
+      id="cards-container"
+      class="bg-gradient-to-b from-[#183B4C] to-[#1B2838] flex justify-center items-center flex-col gap-[50px] py-24"
+    >
+      <div class="flex items-center w-[171px] flex justify-between text-2xl">
+        <div class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] relative">
+          <span
+            class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >1</span
+          >
+        </div>
+        <div class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] relative">
+          <span
+            class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >2</span
+          >
+        </div>
+        <div
+          class="w-[41px] h-[41px] bg-[#2B79FF] rounded-[50%] right-[0] relative"
+        >
+          <span
+            class="absolute right-[50%] top-[50%] translate-x-1/2 -translate-y-1/2"
+            >3</span
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#171D25] text-white py-10 flex flex-col items-center gap-8">
+
+  <ul class="flex flex-col items-center gap-4 text-lg tracking-wide">
+    <li><a href="#" class="hover:text-gray-300">ABOUT</a></li>
+    <li><a href="#" class="hover:text-gray-300">SUPPORT</a></li>
+    <li><a href="#" class="hover:text-gray-300">LEGAL</a></li>
+    <li><a href="#" class="hover:text-gray-300">CONTACT</a></li>
+  </ul>
+
+  <div class="w-[80%] h-[1px] bg-gray-600 mt-2"></div>
+
+
+  <div class="flex flex-col items-center gap-6 mt-2 text-xl">
+
+
+    <div class="flex items-center gap-8">
+      <a href="#" class="flex items-center gap-2 hover:text-gray-300">
+        <img src="facebook-icon.svg" class="w-8" />
+        facebook
+      </a>
+
+      <a href="#" class="flex items-center gap-2 hover:text-gray-300">
+        <img src="Twitter-X-Icon-PNG.png" class="w-7" />
+        twitter
+      </a>
+    </div>
+
+
+    <a href="#" class="flex items-center gap-2 hover:text-gray-300">
+      <img src="Instagram-Logo-PNG5.png" class="w-10" />
+      instagram
+    </a>
+
+  </div>
+</footer>
   </body>
 </html>
