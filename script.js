@@ -2,12 +2,8 @@ const cardsContainer = document.querySelector("#cards-container");
 const filterBox = document.querySelector("#filter__genre-container");
 const filterWrapper = document.querySelector("#filter");
 
-// تخزين البيانات مرة واحدة فقط (من أجل الأداء)
 let allGames = [];
 
-// -------------------------------------------------------------------
-// جلب الألعاب مرة واحدة فقط
-// -------------------------------------------------------------------
 async function loadGames() {
   try {
     const res = await fetch(
@@ -24,11 +20,8 @@ async function loadGames() {
 
 loadGames();
 
-// -------------------------------------------------------------------
-// دالة رسم الكروت
-// -------------------------------------------------------------------
 function renderCards(list) {
-  cardsContainer.innerHTML = ""; // تنظيف الكروت
+  cardsContainer.innerHTML = "";
   list.forEach((g) => {
     const html = `
       <div class="card w-[356px] bg-white bg-gradient-to-b from-[#2C3C49] to-[#576574] flex pl-[20px] flex-col">
